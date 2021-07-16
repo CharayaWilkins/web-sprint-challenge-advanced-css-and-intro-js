@@ -285,9 +285,19 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+  array.push({
+    id: 20, 
+    name:"Charaya Wilkins", 
+    years:"1994 - current day", 
+    genre: "Web Design",
+    nationality: "American",
+    bio: "Charaya lives in Las Vegas, NV. She is 26 years old"
+  });
+  return array;
 }
+
+console.log('Task 6', addArtist(artists));
 
 
 
